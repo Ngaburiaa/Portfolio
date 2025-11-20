@@ -1,0 +1,37 @@
+[
+  {
+    "category": "Frontend",
+    "icon": "layout-panel-left",
+    "skills": [
+      { "name": "React", "level": 95 },
+      { "name": "TypeScript", "level": 90 },
+      { "name": "Vue.js", "level": 85 },
+      { "name": "Next.js", "level": 88 },
+      { "name": "Tailwind CSS", "level": 92 },
+      { "name": "Framer Motion", "level": 80 }
+    ]
+  },
+  {
+    "category": "Backend",
+    "icon": "server",
+    "skills": [
+      { "name": "Node.js", "level": 88 },
+      { "name": "Python", "level": 85 },
+      { "name": "PostgreSQL", "level": 82 },
+   
+      { "name": "Express", "level": 75 },
+      { "name": "Docker", "level": 78 }
+    ]
+  },
+  {
+    "category": "Tools & DevOps",
+    "icon": "toolbox",
+    "skills": [
+      { "name": "Git and Github", "level": 90 },
+      { "name": "AWS", "level": 75 },
+      { "name": "CI/CD", "level": 80 },
+      { "name": "AZURE", "level": 70 }
+      
+    ]
+  }
+]

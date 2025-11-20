@@ -1,0 +1,328 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary-light: #FFFFFF;
+  --color-primary-dark: #0A0A0A;
+  --color-secondary-light: #F8F6F3;
+  --color-secondary-dark: #1A1A1A;
+  --color-accent-light: #8B4513;
+  --color-accent-dark: #A0522D;
+  --color-text-light: #2C2C2C;
+  --color-text-dark: #E8E8E8;
+  --color-border-light: rgba(139, 69, 19, 0.2);
+  --color-border-dark: rgba(160, 82, 45, 0.3);
+
+  --font-family-display: 'Tiempos Text', serif;
+  --font-family-body: 'Suisse Int\'l', sans-serif;
+  --font-family-mono: 'JetBrains Mono', monospace;
+
+  --animate-aurora: aurora 8s ease-in-out infinite;
+  --animate-float: float 6s ease-in-out infinite;
+  --animate-typewriter: typewriter 2s steps(20) 1s forwards;
+  --animate-fade-in: fadeIn 0.6s ease-out forwards;
+  --animate-slide-up: slideUp 0.8s ease-out forwards;
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added our own border colors. You can use them like:
+  - `border-border-light` or `border-border-dark`
+  - `border-border-light/50` for opacity
+*/
+
+* {
+  border-color: var(--color-border-light);
+}
+
+.dark * {
+  border-color: var(--color-border-dark);
+}
+
+body {
+  background: var(--color-primary-light);
+  color: var(--color-text-light);
+  font-family: var(--font-family-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+.dark body {
+  background: var(--color-primary-dark);
+  color: var(--color-text-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-display);
+  font-weight: 700;
+}
+
+code {
+  font-family: var(--font-family-mono);
+}
+
+.container {
+  max-width: 80rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+@media (min-width: 640px) {
+  .section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all 0.2s;
+  outline: none;
+  focus: ring-2 ring-offset-2;
+  disabled: opacity-50 pointer-events-none;
+}
+
+.btn-primary {
+  background: var(--color-accent-light);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: color-mix(in srgb, var(--color-accent-light) 90%, transparent);
+}
+
+.dark .btn-primary {
+  background: var(--color-accent-dark);
+}
+
+.dark .btn-primary:hover {
+  background: color-mix(in srgb, var(--color-accent-dark) 90%, transparent);
+}
+
+.btn-secondary {
+  background: var(--color-secondary-light);
+  color: var(--color-text-light);
+}
+
+.btn-secondary:hover {
+  background: color-mix(in srgb, var(--color-secondary-light) 80%, transparent);
+}
+
+.dark .btn-secondary {
+  background: var(--color-secondary-dark);
+  color: var(--color-text-dark);
+}
+
+.dark .btn-secondary:hover {
+  background: color-mix(in srgb, var(--color-secondary-dark) 80%, transparent);
+}
+
+.card {
+  background: var(--color-secondary-light);
+  border-radius: 0.75rem;
+  border: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.card:hover {
+  border-color: color-mix(in srgb, var(--color-accent-light) 20%, transparent);
+}
+
+.dark .card {
+  background: var(--color-secondary-dark);
+}
+
+.dark .card:hover {
+  border-color: color-mix(in srgb, var(--color-accent-dark) 30%, transparent);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, var(--color-accent-light), color-mix(in srgb, var(--color-accent-light) 70%, transparent));
+  background-clip: text;
+  color: transparent;
+}
+
+.dark .gradient-text {
+  background: linear-gradient(to right, var(--color-accent-dark), color-mix(in srgb, var(--color-accent-dark) 70%, transparent));
+  background-clip: text;
+}
+
+.aurora-bg {
+  background: linear-gradient(-45deg, 
+    var(--color-primary-light), 
+    var(--color-secondary-light), 
+    color-mix(in srgb, var(--color-accent-light) 10%, transparent), 
+    var(--color-secondary-light));
+  background-size: 400% 400%;
+  animation: aurora 8s ease-in-out infinite;
+}
+
+.dark .aurora-bg {
+  background: linear-gradient(-45deg, 
+    var(--color-primary-dark), 
+    var(--color-secondary-dark), 
+    color-mix(in srgb, var(--color-accent-dark) 20%, transparent), 
+    var(--color-secondary-dark));
+  background-size: 400% 400%;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-typewriter {
+  overflow: hidden;
+  border-right: 2px solid var(--color-accent-light);
+  white-space: nowrap;
+  animation: typewriter 2s steps(20) 1s forwards, blink 1s infinite;
+}
+
+.dark .animate-typewriter {
+  border-right-color: var(--color-accent-dark);
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.8s ease-out forwards;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes aurora {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes typewriter {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@keyframes blink {
+  0%, 50% { border-color: transparent; }
+  51%, 100% { border-color: var(--color-accent-light); }
+}
+
+@keyframes blink {
+  0%, 50% { 
+    border-color: transparent; 
+  }
+  51%, 100% { 
+    border-color: var(--blink-color, var(--color-accent-light)); 
+  }
+}
+
+/* Set the CSS variable based on theme */
+:root {
+  --blink-color: var(--color-accent-light);
+}
+
+.dark {
+  --blink-color: var(--color-accent-dark);
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-secondary-light);
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: var(--color-secondary-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--color-accent-light) 50%, transparent);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-light);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: color-mix(in srgb, var(--color-accent-dark) 50%, transparent);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--color-accent-dark);
+}
+
+/* Selection Styling */
+::selection {
+  background: color-mix(in srgb, var(--color-accent-light) 30%, transparent);
+}
+
+.dark ::selection {
+  background: color-mix(in srgb, var(--color-accent-dark) 30%, transparent);
+}
+
+/* Focus Visible */
+:focus-visible {
+  outline: none;
+  ring: 2px var(--color-accent-light);
+  ring-offset: 2px;
+  ring-offset-color: var(--color-primary-light);
+}
+
+.dark :focus-visible {
+  ring: 2px var(--color-accent-dark);
+  ring-offset-color: var(--color-primary-dark);
+}

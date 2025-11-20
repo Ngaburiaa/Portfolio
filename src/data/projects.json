@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "E-Commerce Platform",
+    "description": "Full-stack React application with Node.js backend, featuring user authentication, payment processing, and admin dashboard.",
+    "technologies": ["React", "Node.js", "MongoDB", "Stripe", "JWT"],
+    "image": "/project-1.jpg",
+    "liveUrl": "https://example.com",
+    "repoUrl": "https://github.com",
+    "featured": true,
+    "category": "Full-Stack"
+  },
+  {
+    "id": 2,
+    "title": "Task Management App",
+    "description": "Collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+    "technologies": ["Vue.js", "Firebase", "Tailwind CSS", "Vuex"],
+    "image": "/project-2.jpg",
+    "liveUrl": "https://example.com",
+    "repoUrl": "https://github.com",
+    "featured": false,
+    "category": "Frontend"
+  },
+  {
+    "id": 3,
+    "title": "Weather Dashboard",
+    "description": "Interactive weather dashboard with location-based forecasts, historical data visualization, and responsive design.",
+    "technologies": ["Next.js", "Chart.js", "OpenWeather API", "Framer Motion"],
+    "image": "/project-3.jpg",
+    "liveUrl": "https://example.com",
+    "repoUrl": "https://github.com",
+    "featured": false,
+    "category": "Frontend"
+  },
+  {
+    "id": 4,
+    "title": "API Gateway",
+    "description": "Microservices API gateway with rate limiting, authentication, and request/response transformation capabilities.",
+    "technologies": ["Node.js", "Express", "Redis", "Docker", "Kubernetes"],
+    "image": "/project-4.jpg",
+    "liveUrl": "https://example.com",
+    "repoUrl": "https://github.com",
+    "featured": false,
+    "category": "Backend"
+  },
+  {
+    "id": 5,
+    "title": "Portfolio Website",
+    "description": "Personal portfolio website built with React and TypeScript, featuring smooth animations and responsive design.",
+    "technologies": ["React", "TypeScript", "Framer Motion", "Tailwind CSS"],
+    "image": "/project-5.jpg",
+    "liveUrl": "https://example.com",
+    "repoUrl": "https://github.com",
+    "featured": false,
+    "category": "Frontend"
+  },
+  {
+    "id": 6,
+    "title": "Chat Application",
+    "description": "Real-time chat application with WebSocket connections, user rooms, and file sharing capabilities.",
+    "technologies": ["Socket.io", "React", "MongoDB", "Express"],
+    "image": "/project-6.jpg",
+    "liveUrl": "https://example.com",
+    "repoUrl": "https://github.com",
+    "featured": false,
+    "category": "Full-Stack"
+  }
+]
