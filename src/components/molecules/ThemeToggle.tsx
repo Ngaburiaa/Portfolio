@@ -16,7 +16,7 @@ export const ThemeToggle: React.FC = () => {
         className="transition-transform duration-300"
       >
         <Icon
-          name={theme === 'light' ? 'moon' : 'sun'}
+          name={theme === 'light' ? 'Moon' : 'Sun'}
           size={20}
           className="text-text-light dark:text-text-dark"
         />
