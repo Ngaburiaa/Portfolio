@@ -28,9 +28,7 @@ const experienceData = [
       "Node.js",
       "Express.js",
       "PostgreSQL",
-      "Cloudinary",
-      "OpenAPI 2.0",
-      "Tailwind CSS",
+     "Tailwind CSS",
     ],
   },
   {
