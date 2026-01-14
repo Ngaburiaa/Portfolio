@@ -77,8 +77,8 @@ const projectsData = [
       "Tailwind CSS",
     ],
     image: "/project-2.jpg",
-    liveUrl: "https://example.com", // replace if you have a live demo
-    repoUrl: "https://github.com", // replace with your repo link
+    liveUrl: "https://github.com/Ngaburiaa/Elder-Management-System.git", // replace if you have a live demo
+    repoUrl: "https://github.com/Ngaburiaa/Elder-Management-System.git", // replace with your repo link
     featured: false,
     category: "Full-Stack",
   },
@@ -111,7 +111,7 @@ const projectsData = [
     technologies: ["React", "TypeScript", "Framer Motion", "Tailwind CSS"],
     image: "/project-3.jpg",
     liveUrl: "https://portfolio-ngaburia.vercel.app/",
-    repoUrl: "https://github.com",
+    repoUrl: "https://github.com/Ngaburiaa/Portfolio.git",
     featured: false,
     category: "Frontend",
   },
