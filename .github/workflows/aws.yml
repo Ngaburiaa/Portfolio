@@ -20,11 +20,19 @@ jobs:
         username: ${{ secrets.EC2_USER }}
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
+          # Navigate to app directory, or clone repo if it doesn't exist
           cd ${{ secrets.APP_DIR }} || git clone https://github.com/Ngaburiaa/Portfolio.git ${{ secrets.APP_DIR }}
           cd ${{ secrets.APP_DIR }}
+          
+          # Pull latest code
           git pull origin master
           
-          docker build -t portfolio .
-          docker stop portfolio || true
-          docker rm portfolio || true
-          docker run -d -p 80:3000 --name portfolio portfolio
+          # Build Docker image using multi-stage Dockerfile (frontend + nginx)
+          docker build -t portfolio-ui .
+          
+          # Stop and remove old container if exists
+          docker stop portfolio-ui || true
+          docker rm portfolio-ui || true
+          
+          # Run container with port 80 exposed (frontend served by Nginx)
+          docker run -d -p 80:80 --name portfolio-ui portfolio-ui
