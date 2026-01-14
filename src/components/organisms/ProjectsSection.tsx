@@ -76,7 +76,7 @@ const projectsData = [
       "PostgreSQL",
       "Tailwind CSS",
     ],
-    image: "/elderly.jpg",
+    image: "/project-2.jpg",
     liveUrl: "https://example.com", // replace if you have a live demo
     repoUrl: "https://github.com", // replace with your repo link
     featured: false,
@@ -96,7 +96,7 @@ const projectsData = [
       "Stripe",
       "Tailwind CSS",
     ],
-    image: "/ecommerce.jpg",
+    image: "/project-1.jpg",
     liveUrl: "https://example.com", // replace
     repoUrl: "https://github.com", // replace
     featured: false,
@@ -109,7 +109,7 @@ const projectsData = [
     description:
       "A modern personal developer portfolio built with React and TypeScript, featuring animations, reusable components, and elegant dark/light theming.",
     technologies: ["React", "TypeScript", "Framer Motion", "Tailwind CSS"],
-    image: "/portfolio.jpg",
+    image: "/project-3.jpg",
     liveUrl: "https://example.com",
     repoUrl: "https://github.com",
     featured: false,
