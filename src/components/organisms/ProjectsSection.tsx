@@ -23,7 +23,7 @@ const projectsData = [
       "Cloudinary",
       "Tailwind CSS",
     ],
-    image: "/medical-system.jpg",
+    image: "/project-4.jpg",
     liveUrl: "https://medicalandpatient.netlify.app/",
     repoUrl:
       "https://github.com/Ngaburiaa/Medical_Appointment_-_Patient_Management_System.git",
