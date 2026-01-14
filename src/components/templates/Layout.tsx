@@ -48,7 +48,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="text-center">
             <p className="text-text-light/70 dark:text-text-dark/70 text-sm">
-              © {new Date().getFullYear()} John Doe. All rights reserved.
+              © {new Date().getFullYear()} DENNIS MATHENGE. All rights reserved.
             </p>
             <p className="text-text-light/50 dark:text-text-dark/50 text-xs mt-2">
               Built with React, TypeScript, and Tailwind CSS
