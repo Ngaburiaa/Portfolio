@@ -7,8 +7,34 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation';
 
 
 const experienceData = [
-  {
+    {
     id: 1,
+    company: "Griffin Global Technologies",
+    position: "Software Engineer Intern",
+    period: "Present",
+    location: "Nyeri, Kenya (Hybrid)",
+    description:
+      "Currently working as a Software Engineer Intern, contributing to the development and maintenance of web applications using modern frontend and backend technologies. Gaining hands-on experience in building APIs, integrating databases and cloud services, and collaborating within an agile engineering team.",
+    achievements: [
+ 'Contributed to the development of full-stack web features using React (TypeScript) and Node.js',
+'Implemented and tested RESTful APIs with Express.js and PostgreSQL to support application functionality',
+'Improved UI responsiveness and code maintainability through reusable components and Tailwind CSS',
+'Participated in code reviews, debugging sessions, and agile sprint activities'
+    ],
+    technologies: [
+      "React (TypeScript)",
+      "Redux Toolkit",
+      "RTK Query",
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "Cloudinary",
+      "OpenAPI 2.0",
+      "Tailwind CSS",
+    ],
+  },
+  {
+    id: 2,
     company: "Teach2Give",
     position: "Software Developer Attachee – Cohort 2",
     period: "May 2025 – August 2025",
@@ -34,7 +60,7 @@ const experienceData = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     company: "Teach2Give",
     position: "Software Developer Attachee – Cohort 1",
     period: "May 2024 – August 2024",
